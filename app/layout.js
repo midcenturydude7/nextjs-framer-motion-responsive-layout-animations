@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 
 export const metadata = {
@@ -12,7 +11,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/rgm1dlw.css" />
       </head>
-      <body className="bg-gray-700 font-[sofia-pro,_sans-serif] font-medium not-italic antialiased">
+      <body className="bg-slate-900 font-[sofia-pro,_sans-serif] font-medium not-italic antialiased">
         {children}
       </body>
     </html>

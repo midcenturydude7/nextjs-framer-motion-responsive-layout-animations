@@ -3,8 +3,8 @@ import React from "react";
 export default function ButtonGradient() {
   return (
     <div className="group relative">
-      <div className="group-hover-duration:200 animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r from-pink-600 to-purple-600 opacity-50 blur transition duration-1000 group-hover:opacity-100"></div>
-      <button className="relative flex items-center divide-x divide-slate-500/75 rounded-lg bg-black px-7 py-4 leading-none">
+      <div className="group-hover-duration:200 absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-pink-600 to-purple-600 opacity-50 blur transition duration-1000 group-hover:opacity-100"></div>
+      <button className="relative flex items-center divide-x divide-slate-500/75 rounded-lg bg-zinc-900/90 px-7 py-4 leading-none">
         <span className="flex items-center space-x-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
