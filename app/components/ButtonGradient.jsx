@@ -4,7 +4,7 @@ export default function ButtonGradient() {
   return (
     <div className="group relative">
       <div className="group-hover-duration:200 absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-pink-600 to-purple-600 opacity-50 blur transition duration-1000 group-hover:opacity-100"></div>
-      <button className="hover:border-zinc-200/30795000 relative flex items-center divide-x divide-slate-500/75 rounded-lg border border-transparent bg-zinc-900/90 px-7 py-4 leading-none transition-colors duration-1000 hover:border hover:border-zinc-100/30 hover:bg-black/80">
+      <button className="relative flex items-center divide-x divide-zinc-600/75 rounded-lg border border-transparent bg-zinc-900/90 px-7 py-4 leading-none transition-colors duration-1000 hover:border hover:border-zinc-100/30 hover:bg-black/80 group-hover:divide-slate-100/80">
         <span className="flex items-center space-x-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
