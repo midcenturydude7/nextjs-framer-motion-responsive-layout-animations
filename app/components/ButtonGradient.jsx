@@ -1,18 +1,24 @@
+"use client";
 import React from "react";
 
 export default function ButtonGradient() {
+  const [isHover, setIsHover] = React.useState(null);
+
   return (
-    <div className="group relative">
+    <div onPointerLeave={() => setIsHover(null)} className="group relative">
       <div className="group-hover-duration:200 absolute -inset-0.5 animate-tilt rounded-lg bg-gradient-to-r from-pink-600 to-purple-600 opacity-50 blur transition duration-1000 group-hover:opacity-100"></div>
-      <button className="relative flex items-center divide-x divide-zinc-600/75 rounded-lg border border-transparent bg-zinc-900/90 px-7 py-4 leading-none transition-colors duration-1000 hover:border hover:border-zinc-100/30 hover:bg-black/80 group-hover:divide-slate-100/80">
+      <button
+        onPointerEnter={() => setIsHover(!isHover)}
+        className="relative flex items-center divide-x divide-zinc-600/75 rounded-lg border border-transparent bg-zinc-900/90 px-7 py-4 leading-none transition-colors duration-1000 hover:border hover:border-zinc-100/30 hover:bg-black/80 group-hover:divide-slate-100/80"
+      >
         <span className="flex items-center space-x-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            strokeWidth="1.5"
+            strokeWidth={isHover ? "2.5" : "1.5"}
             stroke="currentColor"
-            className="h-6 w-6 -rotate-6 text-pink-600"
+            className="h-6 w-6 -rotate-6 text-pink-600 transition-colors duration-1000 group-hover:text-slate-100/80"
           >
             <path
               strokeLinecap="round"
