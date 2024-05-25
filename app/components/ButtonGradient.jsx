@@ -14,11 +14,11 @@ export default function ButtonGradient() {
         <span className="flex items-center space-x-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
+            fill={isHover ? "rgb(219, 39, 119)" : "none"}
             viewBox="0 0 24 24"
             strokeWidth={isHover ? "2.5" : "1.5"}
             stroke="currentColor"
-            className="h-6 w-6 -rotate-6 text-pink-600 transition-colors duration-1000 group-hover:text-slate-100/80"
+            className="h-6 w-6 -rotate-6 text-pink-600 transition-colors duration-1000 group-hover:rotate-6 group-hover:text-slate-100/80"
           >
             <path
               strokeLinecap="round"
